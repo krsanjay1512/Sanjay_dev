@@ -7,24 +7,25 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             int[] arr = {50,30,10,60,90,5 };
+            int length=arr.Length;
 
-            int first = Int32.MinValue;
-            int second = Int32.MinValue;
-            for (int i=0;i<arr.Length;i++)
+            int maxValue = Int32.MinValue;
+            int secondMaxValue = Int32.MinValue;
+            for (int i=0;i<length;i++)
             {
-                if (arr[i]>first)
+                if (arr[i]>maxValue)
                 {
-                    second = first;
-                    first = arr[i];
+                    secondMaxValue = maxValue;
+                    maxValue = arr[i];
                 }
-                else if(arr[i]>second)
+                else if(arr[i]>secondMaxValue)
                 {
-                    second = arr[i];
+                    secondMaxValue = arr[i];
                     
                 }
             }
-            Console.WriteLine(first);
-            Console.WriteLine( second);
+            Console.WriteLine("First Largest number :"+maxValue);
+            Console.WriteLine("Second Largest number :"+secondMaxValue);
             Console.ReadLine();
         }
     }
