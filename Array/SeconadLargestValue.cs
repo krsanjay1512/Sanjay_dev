@@ -18,7 +18,7 @@ namespace ConsoleApp1
                     secondMaxValue = maxValue;
                     maxValue = arr[i];
                 }
-                else if(arr[i]>secondMaxValue)
+                else if(arr[i]>secondMaxValue && maxValue != arr[i])
                 {
                     secondMaxValue = arr[i];
                     
