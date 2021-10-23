@@ -1,40 +1,33 @@
-using System;  
-  
-namespace PrimeNumber  
-{  
-    class Program  
-    {  
-        static void Main(string[] args)  
-        {  
-            Console.WriteLine("Enter a number");  
-            int number = Convert.ToInt32(Console.ReadLine());  
-            int result = Check_Prime(number);  
-            if (result == 0)  
-            {  
-                Console.WriteLine("{0} is not a prime number", number);  
-            }  
-            else  
-            {  
-                 Console.WriteLine("{0} is  a prime number", number);  
-            }              
-            Console.Read();  
-        }   
-  
-        private static int Check_Prime(int number)  
-       {  
-            int i;  
-            for (i = 2; i <= number - 1; i++)  
-            {  
-                if (number % i == 0)  
-                {  
-                    return 0;  
-                }  
-            }  
-            if (i == number)  
-            {  
-                return 1;  
-            }  
-            return 0;  
-        }  
-    }    
-} 
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp1
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the number:");
+            int n =Convert.ToInt32( Console.ReadLine());
+            int count = 0;
+            for (int i=1;i<=n;i++)
+            {
+                if (n%i ==0)
+                {
+                    count++;
+                }
+            }
+            if (count==2)
+            {
+                Console.WriteLine("{0} is prime Number",n);
+            }
+            else
+            {
+                Console.WriteLine("{0} is Not Prime Number",n);
+            }
+            Console.ReadLine();
+
+        }
+    }
+
+}
