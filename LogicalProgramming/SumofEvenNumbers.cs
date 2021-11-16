@@ -6,7 +6,7 @@ namespace DotNetTutorials
         static void Main(string[] args)
         {
             int sum = 0;
-            Console.Write("Enter value a Number:");
+            Console.Write("Enter the Number:");
             int Number = Convert.ToInt32(Console.ReadLine());
 
             //start with 2
@@ -16,7 +16,7 @@ namespace DotNetTutorials
             {
                 sum += i;
             }
-            Console.Write($"Sum of even numbers from 1 to {Number} is : {sum}");
+            Console.Write("Sum of even numbers is :" +sum);
             Console.ReadLine();
         }
     }
