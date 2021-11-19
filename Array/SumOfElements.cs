@@ -12,7 +12,7 @@ namespace ConsoleApp1
             {
                 sum += arr[i];
             }
-            Console.WriteLine(sum);
+             Console.WriteLine("Sum of Array Elements is: "+sum);
             Console.ReadLine();
         }
     }
