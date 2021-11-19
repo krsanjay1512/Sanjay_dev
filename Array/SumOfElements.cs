@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            int[] arr = new int[] { 1, 2, 3 };
+            int[] arr = { 1, 2, 3,8,6,4 };
             int sum = 0;
             for (int i = 0; i < arr.Length; i++)
             {
