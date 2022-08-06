@@ -1,6 +1,6 @@
 using System;
 
-namespace RotateRightInArray
+namespace LeftRotateInArray
 {
     class Program
     {
