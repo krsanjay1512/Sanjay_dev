@@ -10,8 +10,8 @@ function printPalindrom()
                     
             }
             if(temp==sum)
-            Console.WriteLine("Palindrome Number");
+            console.log("Palindrome Number");
             else
-                Console.WriteLine("Not Palindrome Number");
+                console.log("Not Palindrome Number");
 }
     printPalindrom();
