@@ -11,5 +11,6 @@ function printCountSpace()
     }
             
     console.log("No of Space in the given string is : "+count);
+    console.log("No of word in the given string is : "+(count+1));
 }
 printCountSpace();
