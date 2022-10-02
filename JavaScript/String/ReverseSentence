@@ -1,0 +1,28 @@
+function ReverseSentence(s) 
+{
+   var count = 0;
+            for (var i = s.length - 1; i >= 0; i--)
+            {
+                if (s[i] != ' ')
+                {
+                    count++;
+                }
+                else
+                {
+                    for (var j = i + 1; count > 0; j++)
+                    {
+                        console.log(s[j]);
+                        count--;
+                    }
+                       console.log(" ");
+                }
+              
+            }
+            for (var i = 0; i <= count; i++)
+            {
+                console.log(s[i]);
+            }
+
+ }
+ 
+ ReverseSentence("how are you");
